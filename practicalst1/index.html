@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee record Holder</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Record Holder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Employee Management System</h2>
+        
+        <div class="input">
+            <input type="text" id="name" placeholder="Enter the Employee Name">
+            <input type="text" id="id" placeholder="Enter the Employee ID">
+            <input type="number" id="salary" placeholder="Enter the Salary">
+        </div>
+
+        <div class="button">
+            <button onclick="addEmployee()">Add Employee</button>
+            <button onclick="totalSalary()">Total Salary</button>
+            <button onclick="averageSalary()">Average Salary</button>
+            <button onclick="displayEmployees()">Display All</button>
+            <button onclick="filterSalary()">Salary > 80000</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

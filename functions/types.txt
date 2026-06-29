@@ -1,0 +1,54 @@
+┌─────────────────────┬─────────────────────────────────────────┐
+│ First Class Function│ Functions are treated like variables.   │
+│                     │ They can be:                            │
+│                     │ • Stored in variables                   │
+│                     │ • Passed as arguments                   │
+│                     │ • Returned from functions               │
+│ Example             │ let x = function(){                     │
+│                     │     console.log("Hi");                  │
+│                     │ }                                       │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Higher Order        │ A function that:                        │
+│ Function            │ • Takes a function as argument          │
+│                     │ OR                                      │
+│                     │ • Returns a function                    │
+│ Example             │ function hi(v){                         │
+│                     │     v();                                │
+│                     │ }                                       │
+│                     │ hi(function(){                          │
+│                     │     console.log("Hello");               │
+│                     │ })                                      │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Pure Function       │ Same input → Same output                │
+│                     │ No side effects                         │
+│ Example             │ function add(a,b){                      │
+│                     │     return a+b;                         │
+│                     │ }                                       │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Impure Function     │ May modify external data or depend      │
+│                     │ on external state.                      │
+│ Example             │ let total = 0;                          │
+│                     │ function add(x){                        │
+│                     │     total += x;                         │
+│                     │ }                                       │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Closure             │ Inner function remembers variables      │
+│                     │ from outer scope even after outer       │
+│                     │ function has finished execution.        │
+│ Example             │ function outer(){                       │
+│                     │     let a = 10;                         │
+│                     │     return function(){                  │
+│                     │         console.log(a);                 │
+│                     │     }                                   │
+│                     │ }                                       │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Lexical Scoping     │ A function can access variables from    │
+│                     │ the scope where it was defined.         │
+│ Example             │ function outer(){                       │
+│                     │     let a = 10;                         │
+│                     │     function inner(){                   │
+│                     │         console.log(a);                 │
+│                     │     }                                   │
+│                     │     inner();                            │
+│                     │ }                                       │
+└─────────────────────┴─────────────────────────────────────────┘

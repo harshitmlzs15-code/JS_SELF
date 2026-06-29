@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript const</h2>
+
+<p id="demo"></p>
+<p id="d">hi</p>
+<p id="dp">hi</p>
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+// Initial array
+document.getElementById("demo").innerHTML +=
+"Initial Array: " + cars + "<br><br>";
+
+// Change an element
+cars[0] = "Toyota";
+
+document.getElementById("demo").innerHTML +=
+"After Changing Element: " + cars + "<br><br>";
+
+// Add an element
+cars.push("Audi");
+
+document.getElementById("demo").innerHTML +=
+"After Adding Element: " + cars;
+</script>
+<script src="datatype.js"></script>
+</body>
+</html>
