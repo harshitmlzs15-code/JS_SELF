@@ -20,6 +20,23 @@ Comment	    8	        <!-- Comment -->
 Attribute	2	        id, class, href
 Document Type	10.   	<!DOCTYPE html>
 
+DOM Tree:
+Document
+│
+├── DOCTYPE
+│
+└── html
+    │
+    ├── head
+    │
+    └── body
+        │
+        ├── Comment
+        │
+        └── h1
+            ├── id="title" (Attribute)
+            └── "Hello" (Text)
+
 ________________________________________________
 
 ques 3: difference between element and text node
