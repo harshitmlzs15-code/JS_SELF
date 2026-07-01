@@ -50,3 +50,16 @@ ques 3: difference between element and text node
 | Can have attributes?  | ✅ Yes (`id`, `class`)No      ❌         |
 | Can be styled?        | ✅ Yes          | ❌ No                  |
 | Can contain text?     | ✅ Yes          | ❌ Already is the text |
+
+
+________________________________________________
+Ques 4: what does createElement() do? what's returned?
+ans 4: createElement creates a new element dynamically inside a wp using js, it returns a new node. appendChild(): element add at last, prepend() element add at front
+
+
+________________________________________________
+ques 5: can you remove an element using removechild()?
+ans 5: yes, document.querySelector("parentElement").removechild("elementNode)
+
+________________________________________________
+
