@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload file</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        input{
+            display: none;
+        }
+
+        div{
+            width:250px;
+            height:80px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            background-color: #045535;
+            color:white;
+            border-radius: 20px;
+            user-select:none;
+            font-size:clamp(12px,3vw,40px); /* min preferred max */
+        }
+        #upload:hover{
+            background-color: #0e8c4a;
+            cursor:pointer;
+        }
+        </style>
+</head>
+<body>
+    <input id="file" type="file" multiple>
+    <div id="upload">
+        upload files
+    </div>
+    <script src="upload.js"></script>
+</body>
+</html>
