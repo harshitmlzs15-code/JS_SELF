@@ -6,6 +6,11 @@ div.addEventListener("click", ()=>{
 })
 
 input.addEventListener("change", (val)=>{
-   div.textContent = val.target.files[0].name;
-   
+   const file =  val.target.files[0];
+   if(file){
+      div.textContent = file.name;
+   } 
+   else{
+      div.textContent = "no file selected";
+   } 
 })

@@ -20,20 +20,24 @@
         input{
             display: none;
         }
+div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-        div{
-            width:250px;
-            height:80px;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            flex-direction:column;
-            background-color: #045535;
-            color:white;
-            border-radius: 20px;
-            user-select:none;
-            font-size:clamp(12px,3vw,40px); /* min preferred max */
-        }
+    min-width: 250px;
+    min-height: 80px;
+    padding: 15px 25px;
+
+    background-color: #045535;
+    color: white;
+    border-radius: 20px;
+    user-select: none;
+    font-size: clamp(12px, 3vw, 40px);
+
+    white-space: nowrap; /* Keep text on one line */
+}
         #upload:hover{
             background-color: #0e8c4a;
             cursor:pointer;
