@@ -69,7 +69,6 @@ else{
 //       input[2].value = "",
 //        input[3].value = ""    
 //   })
-
 // form reset using loop
 // input.forEach((field) => {
 //     field.value = "";
