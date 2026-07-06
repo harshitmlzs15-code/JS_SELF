@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;   /* Horizontal center */
+    align-items: center;       /* Vertical center */
+    min-height: 100vh; 
+    background-color: rgb(0, 0, 0);        /* Full viewport height */
+}
+#box{
+    background-color: rgb(255, 229, 102);
+    min-width: 100px;
+    min-height: 100px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.lt{
+    text-decoration: line-through;
+    text-decoration-color: rgb(255, 0, 0);
+    text-decoration-thickness: 2px;
+}
+</style>
+</head>
+<body>
+    <div id = "box">
+        <ul id="list">
+            <li >mango</li>
+            <li>banana</li>
+            <li>grapes</li>
+            <li>orange</li>
+            <li>pineapple</li>
+        </ul>
+    </div>
+    <script src="eventbubbling.js"></script>
+</body>
+</html>
